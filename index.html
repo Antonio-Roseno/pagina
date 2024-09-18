@@ -1,0 +1,942 @@
+<html><head><base href="https://cannabis-cultivation-guide.org/"></base><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Guia Completo de Cultivo de Cannabis: Indoor e Outdoor</title>
+  <meta name="description" content="Guia completo de cultivo de cannabis no Brasil. Aprenda técnicas de cultivo indoor e outdoor, dicas de economia e informações legais.">
+  <meta name="keywords" content="cultivo de cannabis, maconha, cultivo indoor, cultivo outdoor, cannabis medicinal, descriminalização, Brasil">
+  <meta name="author" content="Antonio Roseno De Sousa Amaral">
+  <meta property="og:title" content="Guia Completo de Cultivo de Cannabis no Brasil">
+  <meta property="og:description" content="Aprenda a cultivar cannabis de forma responsável e econômica no Brasil.">
+  <meta property="og:image" content="https://cannabis-cultivation-guide.org/og-image.jpg">
+  <meta property="og:url" content="https://cannabis-cultivation-guide.org">
+  <link rel="canonical" href="https://cannabis-cultivation-guide.org">
+  <style>
+  :root {
+    --primary-color: #2a6e3f;
+    --secondary-color: #1c4c2a;
+    --accent-color: #4CAF50;
+    --bg-color: #f0f8f0;
+    --text-color: #333;
+    --light-text: #fff;
+    --menu-bg: rgba(28, 76, 42, 0.9);
+    --menu-hover: #3a8e5f;
+    --menu-text: #fff;
+  }
+  
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    padding-top: 60px; /* Adjust based on the menu height */
+  }
+  
+  header {
+    margin-top: 60px; /* Adjust this value based on the menu height */
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--light-text);
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  header img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px; /* Limit the maximum height */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--menu-bg);
+    backdrop-filter: blur(10px);
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+  }
+  
+  .logo {
+    color: var(--menu-text);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--menu-text);
+    margin: 5px 0;
+  }
+  
+  .menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu > li {
+    position: relative;
+  }
+  
+  .menu > li > a {
+    color: var(--menu-text);
+    text-decoration: none;
+    padding: 0 15px;
+    line-height: 60px;
+    display: block;
+  }
+  
+  .menu > li:hover > a {
+    background-color: var(--menu-hover);
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--menu-bg);
+    min-width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu > li:hover .submenu {
+    display: block;
+  }
+  
+  .submenu li a {
+    color: var(--menu-text);
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .submenu li a:hover {
+    background-color: var(--menu-hover);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .menu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: var(--menu-bg);
+      flex-direction: column;
+    }
+  
+    .menu.active {
+      display: flex;
+    }
+  
+    .menu > li {
+      width: 100%;
+    }
+  
+    .menu > li > a {
+      padding: 15px;
+      line-height: 1;
+    }
+  
+    .submenu {
+      position: static;
+      width: 100%;
+      display: none;
+    }
+  
+    .menu > li:hover .submenu {
+      display: none;
+    }
+  
+    .has-submenu.active .submenu {
+      display: block;
+    }
+  }
+  
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  
+  .warning {
+    background-color: #ffcc00;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #e8f5e9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .section h2 {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .eco-tip {
+    border-left: 4px solid var(--accent-color);
+    background-color: rgba(76, 175, 80, 0.1);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+  }
+  
+  .eco-tip h4 {
+    color: var(--accent-color);
+  }
+  
+  .comparison {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .indoor, .outdoor {
+    width: 48%;
+    padding: 1rem;
+    background-color: #f1f8e9;
+  }
+  
+  footer {
+    background-color: var(--secondary-color);
+    color: var(--light-text);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+  }
+  
+  tr:hover {
+    background-color: rgba(76, 175, 80, 0.1);
+  }
+  
+  .qr-code-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #f0f8f0;
+    border-radius: 10px;
+  }
+  
+  .qr-code-container img {
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px; /* Limit the maximum height */
+    object-fit: cover;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  </style></head><body>
+    <div id="loader" class="loader"></div>
+    <header>
+      <img src="https://cannabis-cultivation-guide.org/images/hero-cannabis-field.jpg" alt="Campo de cannabis ao pôr do sol" width="100%" height="auto">
+      <h1>Guia Completo de Cultivo de Cannabis: Indoor e Outdoor</h1>
+      <p>Aprenda técnicas detalhadas para cultivo econômico e eficiente</p>
+    </header>
+    
+    <nav>
+      <div class="nav-container">
+        <a href="#" class="logo">Cannabis Guide</a>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="menu">
+          <li><a href="#inicio">Início</a></li>
+          <li class="has-submenu">
+            <a href="#metodos-cultivo">Métodos de Cultivo</a>
+            <ul class="submenu">
+              <li><a href="#indoor">Indoor</a></li>
+              <li><a href="#outdoor">Outdoor</a></li>
+              <li><a href="#cultivo-solo">Cultivo no Solo</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#fundamentos">Fundamentos</a>
+            <ul class="submenu">
+              <li><a href="#solo">Preparação do Solo</a></li>
+              <li><a href="#genetica">Genética e Sementes</a></li>
+              <li><a href="#nutrientes">Nutrição das Plantas</a></li>
+              <li><a href="#iluminacao">Iluminação</a></li>
+            </ul>
+          </li>
+          <li><a href="#aspectos-legais">Aspectos Legais</a></li>
+          <li><a href="#economia">Dicas de Economia</a></li>
+          <li><a href="#sobre-nos">Sobre Nós e Ajuda</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <main>
+      <section id="introducao" class="section">
+        <h2>Cultivo de Cannabis no Brasil: Um Guia Educacional</h2>
+        <p>Bem-vindo ao nosso guia completo sobre cultivo de cannabis no Brasil. Com a recente descriminalização do uso pessoal, muitos brasileiros estão interessados em aprender sobre cultivo responsável e econômico.</p>
+        <p>Como programador e entusiasta, criei este recurso para ajudar você a entender os fundamentos do cultivo de cannabis, seja para uso medicinal ou pessoal, sempre respeitando as leis vigentes.</p>
+        <p>Lembre-se: este guia é puramente educacional. Antes de iniciar qualquer cultivo, informe-se sobre as leis atuais em sua região.</p>
+      </section>
+      
+      <div class="warning">
+        <p>Atenção: Este guia é apenas para fins educacionais. Certifique-se de conhecer e respeitar as leis locais sobre o cultivo de cannabis em sua região.</p>
+      </div>
+  
+      <section id="inicio" class="section">
+        <h2>Introdução ao Cultivo de Cannabis</h2>
+        <p>Bem-vindo ao nosso guia detalhado de cultivo de cannabis, abrangendo tanto métodos indoor quanto outdoor. Este guia fornecerá informações abrangentes para ajudá-lo a iniciar seu cultivo de forma econômica e eficiente.</p>
+      </section>
+      
+      <section id="indoor" class="section">
+        <h2>Cultivo Indoor</h2>
+        <img src="https://cannabis-cultivation-guide.org/images/indoor-grow-setup.jpg" alt="Setup de cultivo indoor com luzes LED" width="100%" height="auto">
+        <p>O cultivo indoor oferece controle total sobre o ambiente, permitindo produção durante todo o ano.</p>
+        <h3>Vantagens:</h3>
+        <ul>
+          <li>Controle preciso de luz, temperatura e umidade</li>
+          <li>Proteção contra pragas e condições climáticas adversas</li>
+          <li>Discrição e segurança</li>
+        </ul>
+        <h3>Desafios:</h3>
+        <ul>
+          <li>Custos iniciais mais elevados (equipamentos de iluminação, ventilação)</li>
+          <li>Consumo de energia elétrica</li>
+          <li>Necessidade de monitoramento constante</li>
+        </ul>
+        <h3>Configuração Básica:</h3>
+        <ol>
+          <li>Espaço de cultivo: armário, tenda ou quarto dedicado</li>
+          <li>Iluminação: LEDs ou HPS (High Pressure Sodium)</li>
+          <li>Ventilação: exaustores e filtros de carvão ativado</li>
+          <li>Sistema de irrigação: manual ou automático</li>
+          <li>Medidores de temperatura e umidade</li>
+        </ol>
+      </section>
+      
+      <section id="outdoor" class="section">
+        <h2>Cultivo Outdoor</h2>
+        <img src="https://cannabis-cultivation-guide.org/images/outdoor-cannabis-garden.jpg" alt="Jardim de cannabis outdoor em pleno crescimento" width="100%" height="auto">
+        <p>O cultivo outdoor aproveita os recursos naturais e pode resultar em plantas maiores e mais produtivas.</p>
+        <h3>Cultivo no Solo:</h3>
+        <p>Cultivar diretamente no solo oferece vantagens únicas para o crescimento das plantas.</p>
+        <ul>
+          <li>Maior espaço para o desenvolvimento das raízes</li>
+          <li>Acesso a nutrientes naturais do solo</li>
+          <li>Menor necessidade de irrigação frequente</li>
+          <li>Possibilidade de plantas maiores e mais produtivas</li>
+        </ul>
+        <h3>Vantagens do Cultivo Outdoor:</h3>
+        <ul>
+          <li>Aproveitamento da luz solar gratuita</li>
+          <li>Menor custo de produção</li>
+          <li>Plantas mais robustas e resistentes</li>
+          <li>Sabor e aroma mais intensos devido aos terpenos naturais</li>
+        </ul>
+        <h3>Desvantagens do Cultivo Outdoor:</h3>
+        <ul>
+          <li>Exposição a condições climáticas adversas</li>
+          <li>Maior risco de pragas e doenças</li>
+          <li>Menor controle sobre o ciclo de crescimento</li>
+          <li>Possíveis problemas de segurança e discrição</li>
+        </ul>
+        <h3>Economia no Cultivo Outdoor:</h3>
+        <ul>
+          <li>Redução de custos com iluminação artificial</li>
+          <li>Menor gasto com energia elétrica</li>
+          <li>Possibilidade de usar composto orgânico caseiro</li>
+          <li>Aproveitamento da água da chuva para irrigação</li>
+        </ul>
+        <h3>Manejo de Plantas Masculinas:</h3>
+        <p>Identificar e remover plantas masculinas é crucial para evitar a polinização não desejada.</p>
+        <ul>
+          <li>Observe atentamente as pré-flores nas axilas dos nós</li>
+          <li>Plantas masculinas desenvolvem pequenas bolsas em forma de banana</li>
+          <li>Remova plantas masculinas assim que identificadas</li>
+          <li>Considere manter algumas plantas masculinas separadas para produção de sementes</li>
+        </ul>
+        <h3>Considerações Regionais:</h3>
+        <p>Adapte seu cultivo às condições específicas da sua região:</p>
+        <ul>
+          <li>Escolha strains adequadas ao clima local</li>
+          <li>Considere o fotoperíodo natural da sua latitude</li>
+          <li>Adapte-se às estações chuvosas ou secas</li>
+          <li>Esteja atento a pragas e doenças comuns na sua área</li>
+        </ul>
+      </section>
+      
+      <section id="solo" class="section">
+        <h2>Preparação do Solo</h2>
+        <img src="https://cannabis-cultivation-guide.org/images/soil-preparation.jpg" alt="Preparação de solo rico em nutrientes para cannabis" width="100%" height="auto">
+        <p>Um solo de qualidade é essencial para o crescimento saudável das plantas de cannabis.</p>
+        <h3>Receita de Solo Econômico:</h3>
+        <ul>
+          <li>1/3 de terra de jardim peneirada</li>
+          <li>1/3 de composto orgânico (feito em casa com restos de alimentos)</li>
+          <li>1/3 de perlita ou vermiculita (para melhorar a drenagem)</li>
+        </ul>
+        <h3>Adicionais Opcionais:</h3>
+        <ul>
+          <li>Farinha de osso (para fósforo)</li>
+          <li>Farinha de sangue (para nitrogênio)</li>
+          <li>Cinzas de madeira (para potássio)</li>
+        </ul>
+        <div class="eco-tip">
+          <h4>Dica Eco:</h4>
+          <p>Faça seu próprio composto usando restos de frutas e vegetais, folhas secas e grama cortada. Isso reduzirá custos e melhorará a qualidade do seu solo.</p>
+        </div>
+      </section>
+      
+      <section id="genetica" class="section">
+        <h2>Genética e Sementes</h2>
+        <img src="https://cannabis-cultivation-guide.org/images/cannabis-seeds.jpg" alt="Variedade de sementes de cannabis" width="100%" height="auto">
+        <p>A escolha das sementes ou clones certos é fundamental para um cultivo bem-sucedido.</p>
+        <h3>Tipos de Cannabis:</h3>
+        <ul>
+          <li>Sativa: Plantas altas, folhas finas, efeito mais energético</li>
+          <li>Indica: Plantas baixas e densas, folhas largas, efeito mais relaxante</li>
+          <li>Híbridas: Combinação de características de Sativa e Indica</li>
+          <li>Ruderalis: Autofloresce independente do fotoperíodo</li>
+        </ul>
+        <h3>Escolha de Sementes:</h3>
+        <ul>
+          <li>Regulares: Produzem plantas masculinas e femininas</li>
+          <li>Feminizadas: Garantem plantas fêmeas (produtoras de flores)</li>
+          <li>Autoflorescentes: Florescem automaticamente após algumas semanas</li>
+        </ul>
+        <div class="eco-tip">
+          <h4>Dica Eco:</h4>
+          <p>Aprenda a fazer suas próprias sementes e clones para reduzir custos a longo prazo. Troque genéticas com outros cultivadores para diversificar seu jardim.</p>
+        </div>
+      </section>
+      
+      <section id="nutrientes" class="section">
+        <h2>Nutrição das Plantas</h2>
+        <img src="https://cannabis-cultivation-guide.org/images/cannabis-nutrients.jpg" alt="Diferentes nutrientes e fertilizantes para cannabis" width="100%" height="auto">
+        <p>Uma nutrição adequada é crucial para o desenvolvimento saudável e a produção de flores de alta qualidade.</p>
+        <h3>Macronutrientes Essenciais:</h3>
+        <ul>
+          <li>Nitrogênio (N): Crescimento vegetativo</li>
+          <li>Fósforo (P): Desenvolvimento de raízes e flores</li>
+          <li>Potássio (K): Fortalecimento geral e resistência a doenças</li>
+        </ul>
+        <h3>Micronutrientes Importantes:</h3>
+        <ul>
+          <li>Cálcio (Ca): Fortalecimento da estrutura celular</li>
+          <li>Magnésio (Mg): Essencial para a fotossíntese</li>
+          <li>Enxofre (S): Produção de proteínas e óleos</li>
+          <li>Ferro (Fe): Produção de clorofila</li>
+        </ul>
+        <h3>Sinais de Deficiência Nutricional:</h3>
+        <ul>
+          <li>Nitrogênio: Folhas amareladas, começando pelas mais velhas</li>
+          <li>Fósforo: Crescimento lento, folhas escuras ou arroxeadas</li>
+          <li>Potássio: Pontas e bordas das folhas queimadas</li>
+          <li>Cálcio: Deformação de folhas novas e pontas marrons</li>
+          <li>Magnésio: Amarelamento entre as nervuras das folhas</li>
+        </ul>
+        <h3>Fertilizantes Caseiros:</h3>
+        <ul>
+          <li>Chá de composto: Rico em nutrientes gerais</li>
+          <li>Água de aquário: Fonte de nitrogênio</li>
+          <li>Casca de banana fermentada: Rica em potássio</li>
+          <li>Cinzas de madeira: Fonte de potássio e cálcio</li>
+        </ul>
+        <table>
+          <tr>
+            <th>Fase de Crescimento</th>
+            <th>Necessidades Nutricionais</th>
+          </tr>
+          <tr>
+            <td>Mudas</td>
+            <td>Baixo N, baixo P, baixo K</td>
+          </tr>
+          <tr>
+            <td>Vegetativo</td>
+            <td>Alto N, médio P, médio K</td>
+          </tr>
+          <tr>
+            <td>Pré-floração</td>
+            <td>Médio N, alto P, alto K</td>
+          </tr>
+          <tr>
+            <td>Floração</td>
+            <td>Baixo N, alto P, alto K</td>
+          </tr>
+        </table>
+      </section>
+      
+      <section id="iluminacao" class="section">
+        <h2>Iluminação</h2>
+        <img src="https://cannabis-cultivation-guide.org/images/cannabis-lighting.jpg" alt="Diferentes tipos de iluminação para cultivo de cannabis" width="100%" height="auto">
+        <p>A iluminação adequada é crucial, especialmente para cultivos indoor.</p>
+        <div class="comparison">
+          <div class="indoor">
+            <h3>Iluminação Indoor:</h3>
+            <ul>
+              <li>LEDs: Eficientes, baixo calor, espectro completo</li>
+              <li>HPS: Alta produção, mais calor</li>
+              <li>Fluorescentes: Boas para mudas e vegetação</li>
+            </ul>
+          </div>
+          <div class="outdoor">
+            <h3>Iluminação Outdoor:</h3>
+            <ul>
+              <li>Luz solar natural</li>
+              <li>Considere o posicionamento para máxima exposição</li>
+              <li>Use estufas ou túneis para estender a temporada</li>
+            </ul>
+          </div>
+        </div>
+        <h3>Ciclos de Luz:</h3>
+        <ul>
+          <li>Vegetativo: 18 horas de luz, 6 horas de escuro</li>
+          <li>Floração: 12 horas de luz, 12 horas de escuro</li>
+        </ul>
+        <h3>Espectro de Luz:</h3>
+        <ul>
+          <li>Azul (400-500nm): Estimula o crescimento vegetativo</li>
+          <li>Vermelho (620-780nm): Promove a floração e frutificação</li>
+          <li>Espectro completo: Simula a luz solar, ideal para todo o ciclo</li>
+        </ul>
+        <h3>Intensidade de Luz:</h3>
+        <p>A intensidade de luz é medida em PPFD (Photosynthetic Photon Flux Density)</p>
+        <ul>
+          <li>Mudas: 200-400 PPFD</li>
+          <li>Vegetativo: 400-600 PPFD</li>
+          <li>Floração: 600-1000 PPFD</li>
+        </ul>
+      </section>
+      
+      <section id="colheita" class="section">
+        <h2>Colheita e Cura</h2>
+        <img src="https://cannabis-cultivation-guide.org/images/cannabis-harvest.jpg" alt="Processo de colheita de flores de cannabis maduras" width="100%" height="auto">
+        <p>A colheita no momento certo e a cura adequada são essenciais para a qualidade final.</p>
+        <h3>Sinais de Prontidão para Colheita:</h3>
+        <ul>
+          <li>Pistils (pelos) majoritariamente escurecidos</li>
+          <li>Tricomas (glândulas de resina) leitosos ou âmbar</li>
+          <li>Folhas começam a amarelar</li>
+        </ul>
+        <h3>Processo de Cura:</h3>
+        <ol>
+          <li>Corte os galhos com flores</li>
+          <li>Faça a poda das folhas grandes</li>
+          <li>Seque em local escuro e ventilado (7-14 dias)</li>
+          <li>Armazene em potes de vidro, abra diariamente nas primeiras semanas</li>
+          <li>Cure por pelo menos 2-4 semanas para melhor sabor e potência</li>
+        </ol>
+      </section>
+      
+      <section id="economia" class="section">
+        <h2>Dicas de Economia</h2>
+        <ul>
+          <li>Reutilize materiais: garrafas PET como vasos, baldes como recipientes de cultivo</li>
+          <li>Faça seu próprio sistema de irrigação com garrafas e mangueiras</li>
+          <li>Use espelhos ou papel alumínio para aumentar a reflexão de luz</li>
+          <li>Aprenda técnicas de clonagem para propagar suas melhores plantas</li>
+          <li>Faça trocas de sementes, clones e equipamentos com outros cultivadores</li>
+          <li>Coleta água da chuva para irrigação</li>
+          <li>Use temporizadores para controlar a iluminação e economizar energia</li>
+        </ul>
+      </section>
+      
+      <section id="pragas" class="section">
+        <h2>Pragas e Doenças</h2>
+        <p>O controle de pragas e doenças é crucial para um cultivo saudável e produtivo.</p>
+        <h3>Pragas Comuns:</h3>
+        <ul>
+          <li>Ácaros: Pequenos insetos que se alimentam das folhas</li>
+          <li>Moscas brancas: Insetos que sugam a seiva das plantas</li>
+          <li>Pulgões: Pequenos insetos que se alimentam de brotos e folhas jovens</li>
+          <li>Lagartas: Larvas de mariposas que comem as folhas</li>
+        </ul>
+        <h3>Doenças Comuns:</h3>
+        <ul>
+          <li>Mofo cinzento: Fungo que afeta flores e brotos</li>
+          <li>Oídio: Fungo que cria uma camada branca nas folhas</li>
+          <li>Fusariose: Doença que afeta as raízes e caule</li>
+        </ul>
+        <h3>Métodos de Controle Natural:</h3>
+        <ul>
+          <li>Óleo de neem: Repelente natural para diversos insetos</li>
+          <li>Sabão de potássio: Eficaz contra ácaros e moscas brancas</li>
+          <li>Predadores naturais: Joaninhas, ácaros predadores, etc.</li>
+          <li>Rotação de culturas: Previne acúmulo de patógenos no solo</li>
+        </ul>
+        <div class="eco-tip">
+          <h4>Dica Eco:</h4>
+          <p>Mantenha seu espaço de cultivo limpo e bem ventilado para prevenir problemas. Inspecione regularmente suas plantas para detectar problemas precocemente.</p>
+        </div>
+      </section>
+      
+      <section id="tecnicas-avancadas" class="section">
+        <h2>Técnicas Avançadas de Cultivo</h2>
+        <p>Estas técnicas podem ajudar a aumentar a produtividade e qualidade das suas plantas.</p>
+        
+        <h3>Treinamento de Plantas:</h3>
+        <ul>
+          <li>LST (Low Stress Training): Dobrar gentilmente os galhos para controlar o crescimento</li>
+          <li>SCROG (Screen of Green): Usar uma tela para criar uma copa uniforme</li>
+          <li>Topping: Cortar o topo da planta para estimular o crescimento lateral</li>
+          <li>FIMing: Técnica similar ao topping, mas removendo apenas parte do topo</li>
+        </ul>
+        
+        <h3>Métodos de Cultivo Hidropônico:</h3>
+        <ul>
+          <li>DWC (Deep Water Culture): Raízes suspensas em solução nutritiva oxigenada</li>
+          <li>NFT (Nutrient Film Technique): Fluxo contínuo de solução nutritiva sobre as raízes</li>
+          <li>Aeroponics: Raízes suspensas e pulverizadas com solução nutritiva</li>
+        </ul>
+        
+        <h3>Controle de Clima Avançado:</h3>
+        <ul>
+          <li>CO2 Suplementar: Aumenta o crescimento em ambientes fechados</li>
+          <li>Controle de Umidade: Uso de umidificadores/desumidificadores</li>
+          <li>Automação: Sistemas de controle para regular luz, temperatura e irrigação</li>
+        </ul>
+      </section>
+  
+      <section id="cultivo-solo" class="section">
+        <h2>Cultivo no Solo</h2>
+        <p>O cultivo diretamente no solo é um método tradicional e eficiente para o cultivo outdoor de cannabis.</p>
+        
+        <h3>Preparação do Solo:</h3>
+        <ol>
+          <li>Escolha um local com boa drenagem e exposição solar</li>
+          <li>Faça uma análise do solo para determinar o pH e nutrientes presentes</li>
+          <li>Corrija o pH do solo se necessário (ideal entre 6.0 e 7.0)</li>
+          <li>Adicione composto orgânico e outros fertilizantes naturais</li>
+          <li>Revolva o solo para melhorar a aeração e misturar os nutrientes</li>
+        </ol>
+        
+        <h3>Vantagens do Cultivo no Solo:</h3>
+        <ul>
+          <li>Desenvolvimento natural e robusto das raízes</li>
+          <li>Menor necessidade de irrigação frequente</li>
+          <li>Acesso a uma ampla gama de micronutrientes naturais</li>
+          <li>Potencial para plantas maiores e mais produtivas</li>
+          <li>Sabor e aroma mais intensos no produto final</li>
+        </ul>
+        
+        <h3>Desafios do Cultivo no Solo:</h3>
+        <ul>
+          <li>Maior exposição a pragas do solo</li>
+          <li>Possível competição com ervas daninhas</li>
+          <li>Menor controle sobre a nutrição específica</li>
+          <li>Dependência das condições climáticas locais</li>
+        </ul>
+        
+        <h3>Dicas para Cultivo no Solo:</h3>
+        <ul>
+          <li>Use cobertura morta (mulch) para conservar umidade e prevenir ervas daninhas</li>
+          <li>Implemente um sistema de irrigação por gotejamento para eficiência</li>
+          <li>Faça rotação de culturas para manter a saúde do solo</li>
+          <li>Considere o uso de plantas companheiras para controle natural de pragas</li>
+        </ul>
+        
+        <div class="eco-tip">
+          <h4>Dica Eco:</h4>
+          <p>Aproveite resíduos orgânicos da cozinha para fazer seu próprio composto. Isso não só economiza dinheiro, mas também melhora a qualidade do seu solo de forma sustentável.</p>
+        </div>
+      </section>
+  
+      <section id="aspectos-legais" class="section">
+        <h2>Aspectos Legais do Cultivo de Cannabis no Brasil</h2>
+        <p>Com a recente descriminalização do uso pessoal de cannabis no Brasil, é importante entender os aspectos legais relacionados ao cultivo.</p>
+        
+        <h3>Situação Atual:</h3>
+        <ul>
+          <li>O Supremo Tribunal Federal (STF) descriminalizou o porte de maconha para uso pessoal</li>
+          <li>O cultivo para uso pessoal ainda está em discussão legal</li>
+          <li>A quantidade considerada para uso pessoal ainda não foi definida</li>
+        </ul>
+        
+        <h3>Considerações Importantes:</h3>
+        <ul>
+          <li>Este guia é apenas para fins educacionais</li>
+          <li>Consulte sempre a legislação mais recente antes de iniciar qualquer cultivo</li>
+          <li>O uso medicinal de cannabis tem regulamentações específicas</li>
+        </ul>
+        
+        <p>Como programador e entusiasta, meu objetivo é fornecer informações para um cultivo responsável e seguro, em conformidade com as leis vigentes.</p>
+        
+        <div class="warning">
+          <p>Atenção: As informações legais podem mudar. Mantenha-se informado sobre as leis atuais em sua região.</p>
+        </div>
+      </section>
+  
+      <section id="sobre-nos" class="section">
+        <h2>Sobre Nós e Ajuda</h2>
+        <p>Somos uma equipe dedicada a fornecer informações educacionais sobre o cultivo responsável de cannabis no Brasil. Nossa missão é ajudar as pessoas a entenderem melhor as práticas de cultivo seguro e econômico, sempre respeitando as leis vigentes.</p>
+        
+        <h3>Apoie Nosso Trabalho</h3>
+        <p>Se você achou este guia útil e gostaria de apoiar nosso trabalho, considere fazer uma doação. Qualquer valor é bem-vindo e nos ajuda a continuar fornecendo conteúdo educacional de qualidade.</p>
+        
+        <div class="qr-code-container">
+          <img src="qr-code-placeholder.png" alt="QR Code para doações" width="200" height="200">
+          <p>Escaneie o QR Code acima para fazer uma doação</p>
+        </div>
+  
+        <h3>Contato</h3>
+        <p>Para mais informações ou para solicitar conteúdos específicos, entre em contato conosco:</p>
+        <ul>
+          <li>Instagram: <a href="https://www.instagram.com/netodes/" target="_blank">@netodes</a></li>
+          <li>Email: contato@cannabis-cultivation-guide.org</li>
+        </ul>
+      </section>
+      
+    </main>
+    
+    <footer>
+      <p>&copy; 2023 Guia Completo de Cultivo de Cannabis. Todos os direitos reservados.</p>
+      <p>Este site é apenas para fins educacionais. Cultive responsavelmente e de acordo com as leis locais.</p>
+      <p>Desenvolvido por Antonio Roseno De Sousa Amaral</p>
+      <p>Instagram: <a href="https://www.instagram.com/netodes/" target="_blank">@netodes</a></p>
+    </footer>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+    const hasSubmenu = document.querySelectorAll('.has-submenu');
+  
+    menuToggle.addEventListener('click', function() {
+      menu.classList.toggle('active');
+    });
+  
+    hasSubmenu.forEach(item => {
+      item.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          this.classList.toggle('active');
+        }
+      });
+    });
+  
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+      if (!event.target.closest('.nav-container')) {
+        menu.classList.remove('active');
+        hasSubmenu.forEach(item => item.classList.remove('active'));
+      }
+    });
+  
+    const navLinks = document.querySelectorAll('nav ul li a');
+    const sections = document.querySelectorAll('main section');
+  
+    // Adiciona smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  
+    // Subtle animations
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+  
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+  
+    document.querySelectorAll('.section').forEach(section => {
+      observer.observe(section);
+    });
+  
+    navLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').slice(1);
+  
+        sections.forEach(section => {
+          if (section.id === targetId) {
+            section.classList.remove('hidden');
+            section.scrollIntoView({behavior: 'smooth'});
+          } else {
+            section.classList.add('hidden');
+          }
+        });
+      });
+    });
+  
+    const menuItems = document.querySelectorAll('.menu > li');
+  
+    menuItems.forEach(item => {
+      item.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768) {
+          const submenu = this.querySelector('.submenu');
+          if (submenu) {
+            e.preventDefault();
+            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+          }
+        }
+      });
+    });
+  
+    // Adicionar botão "Voltar ao Topo"
+    const backToTopButton = document.createElement('button');
+    backToTopButton.textContent = 'Voltar ao Topo';
+    backToTopButton.style.position = 'fixed';
+    backToTopButton.style.bottom = '20px';
+    backToTopButton.style.right = '20px';
+    backToTopButton.style.display = 'none';
+    backToTopButton.style.padding = '10px';
+    backToTopButton.style.backgroundColor = '#2a6e3f';
+    backToTopButton.style.color = '#fff';
+    backToTopButton.style.border = 'none';
+    backToTopButton.style.borderRadius = '5px';
+    backToTopButton.style.cursor = 'pointer';
+  
+    document.body.appendChild(backToTopButton);
+  
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 300) {
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    });
+  
+    backToTopButton.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+  
+  // Loader animation
+  window.addEventListener('load', () => {
+    document.getElementById('loader').style.display = 'none';
+  });
+  </script>
+  <style>
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(240, 248, 240, 0.8);
+    z-index: 9999;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ddd;
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+  
+  @keyframes loading {
+    from { transform: rotate(0turn) }
+    to { transform: rotate(1turn) }
+  }
+  </style>
+  </body></html>
